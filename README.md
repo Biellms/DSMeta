@@ -1,18 +1,16 @@
 <div align="center">
 
-**DSMeta**
+### **DSMeta** 🖥️
 
 Semana Spring React - App completo com as tecnologias mais demandadas do mercado, como: Java, Spring, ReactJS e SQL.
 
 </div>
 
-<br>
-
 #
 
 <div align="center">
 
-**Sobre**
+**Sobre** 📝
 
 </div>
 
