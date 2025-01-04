@@ -10,7 +10,7 @@ Semana Spring React - App completo com as tecnologias mais demandadas do mercado
 
 <div align="center">
 
-**Sobre** 📝
+### **Sobre** 📝
 
 </div>
 
