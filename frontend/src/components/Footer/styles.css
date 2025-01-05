@@ -1,0 +1,19 @@
+.dsmeta-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dsmeta-logo-container p {
+    font-size: 14px;
+    font-weight: 300;
+    font-weight: bold;
+}
+
+footer {
+    background: linear-gradient(360deg, #495171 -25%, #0f0f0f 85%);
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
