@@ -5,8 +5,11 @@ import './styles.css'
 import { useState } from 'react';
 
 function SalesCard() {
-    const [startDate, setStartDate] = useState<Date | null>(new Date());
-    const [endDate, setEndDate] = useState<Date | null>(new Date());
+    const min = new Date(new Date().setDate(new Date().getDate() - 365))
+    const max = new Date()
+
+    const [startDate, setStartDate] = useState<Date | null>(min);
+    const [endDate, setEndDate] = useState<Date | null>(max);
 
     return (
         <div className="dsmeta-card">

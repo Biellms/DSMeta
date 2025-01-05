@@ -14,7 +14,7 @@
 }
 
 header {
-    background: linear-gradient(180deg, #495171 0%, #0f0f0f 90%);
+    background: linear-gradient(180deg, #283142 0%, #0f0f0f 90%);
     min-height: 20vh;
     display: flex;
     align-items: center;
