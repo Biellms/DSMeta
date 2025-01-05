@@ -1,7 +1,11 @@
-function App() {
+import NotificationButton from "./NotificationButton"
 
+function App() {
   return (
-    <div>What's up?</div>
+    <>
+      <div>What's up?</div>
+      <NotificationButton/>
+    </>
   )
 }
 
