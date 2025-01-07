@@ -13,8 +13,10 @@ function SalesCard() {
 
     return (
         <div className="dsmeta-card">
-            <h2 className="dsmeta-sales-title">Vendas</h2>
-            <div>
+            <h2 className="dsmeta-sales-title">Tabela de Vendas</h2>
+            <hr/>
+            <br/>
+            <div className='dsmeta-box-date'>
                 <div className="dsmeta-form-control-container">
                     <DatePicker
                         selected={startDate}

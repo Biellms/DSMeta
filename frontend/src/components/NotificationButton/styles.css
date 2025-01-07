@@ -1,15 +1,21 @@
 .dsmeta-red-btn {
-    height: 45px;
-    width: 45px;
-    background: rgba(255, 107, 114, 0.1);
-    border: 1px solid #ff6b72;
+    height: 40px;
+    width: 40px;
+    background: #2e3c55;
+    border: 1px solid #0686D8;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-  }
-  
-  .dsmeta-red-btn img {
-      width: 19px;
-  }
+    transition: filter 0.2s ease-in-out;
+}
+
+.dsmeta-red-btn:hover {
+    transition: filter 0.2s ease-in-out;
+    filter: brightness(1.5);
+}
+
+.dsmeta-red-btn img {
+    width: 22px;
+}
