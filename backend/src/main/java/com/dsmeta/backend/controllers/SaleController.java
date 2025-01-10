@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.dsmeta.backend.entities.Sale;
 import com.dsmeta.backend.services.SaleService;
+import com.dsmeta.backend.services.SmsService;
 
 @RestController
 @RequestMapping(value = "/sales")
@@ -18,6 +19,9 @@ public class SaleController {
 	@Autowired
 	private SaleService saleService;
 	
+	@Autowired
+	private SmsService smsService; 
+	
 	@GetMapping
 	public Page<Sale> getAllSalesByDate(
 			@RequestParam(value = "minDate", defaultValue = "") String minDate,
@@ -25,4 +29,10 @@ public class SaleController {
 			Pageable pageable) {
 		return saleService.getAllSalesByDate(minDate, maxDate, pageable);
 	}
+	
+	@GetMapping("/notifyUser")
+	public String notifyUser(@RequestParam(value = "textMessage", defaultValue = "") String textMessage) {
+		return smsService.sendSms(textMessage);
+	}
+	
 }
