@@ -1,5 +1,6 @@
 package com.dsmeta.backend.services;
 
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -10,9 +11,12 @@ import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Service
 public class SmsService {
-	
+		
 	@Autowired
 	private SaleRepository saleRepository;
 	
@@ -38,10 +42,10 @@ public class SmsService {
 		if(!textMessage.equals("")) {
 			Message message = Message.creator(to, from, textMessage).create();
 
-			System.out.println(message.getSid());
-			
+			log.info("[SmsService] notifyUserOpen: Message sent successfully | SID: " + message.getSid());
 			return "Message sent successfully!";
 		} else {
+			log.error("[SmsService] notifyUserOpen: Message not sent");
 			return "Message not sent!";
 		}
 	}
@@ -67,7 +71,7 @@ public class SmsService {
 		
 		Message message = Message.creator(to, from, msg).create();
 			
-		System.out.println(message.getSid());
+		log.info("[SmsService] notifySaleUser: Message sent successfully | SID: " + message.getSid());
 	}
 	
 }
