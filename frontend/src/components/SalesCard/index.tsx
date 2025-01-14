@@ -8,8 +8,8 @@ import { BASE_URL } from '../../utils/request';
 import { Sale } from '../../models/sale';
 
 function SalesCard() {
-    const min = new Date(new Date().setDate(new Date().getDate() - 365))
-    const max = new Date()
+    const max = new Date(2024, 6, 1); // July is 6 (zero-based) - Date based on the maximum value in the DSMeta database
+    const min = new Date(new Date(max).setDate(max.getDate() - 365));
 
     const [startDate, setStartDate] = useState<Date | null>(min);
     const [endDate, setEndDate] = useState<Date | null>(max);
@@ -17,10 +17,16 @@ function SalesCard() {
     const [sales, setSales] = useState<Sale[]>([])
 
     useEffect(() => {
-        axios.get(`${BASE_URL}/sales`).then(response => {
-            setSales(response.data.content)
-        })
-    }, [])
+        if (startDate && endDate) {
+            const sdate = startDate.toISOString().slice(0, 10);
+            const edate = endDate.toISOString().slice(0, 10);
+    
+            console.log(sdate + " e " + edate);
+    
+            axios.get(`${BASE_URL}/sales?minDate=${sdate}&maxDate=${edate}`)
+                .then(response => setSales(response.data.content));
+        }
+    }, [startDate, endDate]);    
 
     return (
         <div className="dsmeta-card">
