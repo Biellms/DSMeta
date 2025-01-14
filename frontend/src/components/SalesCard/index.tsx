@@ -22,8 +22,6 @@ function SalesCard() {
             const sdate = startDate.toISOString().slice(0, 10);
             const edate = endDate.toISOString().slice(0, 10);
 
-            console.log(sdate + " e " + edate);
-
             axios.get(`${BASE_URL}/sales?minDate=${sdate}&maxDate=${edate}`)
                 .then(response => setSales(response.data.content));
         }
@@ -88,7 +86,7 @@ function SalesCard() {
                                         <td>$ {sale.amount.toFixed(2)}</td>
                                         <td>
                                             <div className="dsmeta-red-btn-container">
-                                                <NotificationButton />
+                                                <NotificationButton saleId={sale.id}/>
                                             </div>
                                         </td>
                                     </tr>
@@ -104,7 +102,7 @@ function SalesCard() {
                                         <td>$ 86300.00</td>
                                         <td>
                                             <div className="dsmeta-red-btn-container">
-                                                <NotificationButton />
+                                                <NotificationButton saleId={1}/>
                                             </div>
                                         </td>
                                     </tr>
@@ -117,7 +115,7 @@ function SalesCard() {
                                         <td>R$ 66400.00</td>
                                         <td>
                                             <div className="dsmeta-red-btn-container">
-                                                <NotificationButton />
+                                                <NotificationButton saleId={2}/>
                                             </div>
                                         </td>
                                     </tr>
