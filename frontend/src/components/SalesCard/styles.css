@@ -42,7 +42,7 @@
 .dsmeta-red-btn {
     height: 40px;
     width: 40px;
-    background: #2e3c55;
+    background: #f9c3131a;
     border: 1px solid #f9c313;
     border-radius: 10px;
     display: flex;
@@ -54,7 +54,7 @@
 
 .dsmeta-red-btn:hover {
     transition: filter 0.2s ease-in-out;
-    filter: brightness(1.25);
+    filter: brightness(1.23);
 }
 
 .dsmeta-red-btn img {
