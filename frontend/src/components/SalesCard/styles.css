@@ -7,18 +7,19 @@
 .dsmeta-box-date {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.dsmeta-form-control-container {
+    max-width: 300px;
 }
 
 .dsmeta-sales-title {
     color: whitesmoke;
     font-size: 24px;
     margin-bottom: 20px;
-}
-
-.dsmeta-form-control-container {
-    margin-bottom: 16px;
-    max-width: 300px;
 }
 
 .dsmeta-form-control {
@@ -36,6 +37,28 @@
     width: 100%;
     border-spacing: 0;
     border-collapse: collapse;
+}
+
+.dsmeta-red-btn {
+    height: 40px;
+    width: 40px;
+    background: #2e3c55;
+    border: 1px solid #f9c313;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: filter 0.2s ease-in-out;
+}
+
+.dsmeta-red-btn:hover {
+    transition: filter 0.2s ease-in-out;
+    filter: brightness(1.25);
+}
+
+.dsmeta-red-btn img {
+    width: 22px;
 }
 
 .dsmeta-sales-table thead {

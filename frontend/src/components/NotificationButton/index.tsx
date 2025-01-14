@@ -3,7 +3,7 @@ import icon from '../../../src/assets/img/send-not.svg'
 
 function NotificationButton() {
   return (
-    <div className="dsmeta-red-btn">
+    <div className="dsmeta-blue-btn">
       <img src={icon} alt="Notificar" />
     </div>
   )

@@ -1,4 +1,4 @@
-.dsmeta-red-btn {
+.dsmeta-blue-btn {
     height: 40px;
     width: 40px;
     background: #2e3c55;
@@ -11,11 +11,11 @@
     transition: filter 0.2s ease-in-out;
 }
 
-.dsmeta-red-btn:hover {
+.dsmeta-blue-btn:hover {
     transition: filter 0.2s ease-in-out;
     filter: brightness(1.5);
 }
 
-.dsmeta-red-btn img {
+.dsmeta-blue-btn img {
     width: 22px;
 }
