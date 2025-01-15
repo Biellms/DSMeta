@@ -31,30 +31,38 @@ public class SmsService {
 	@Value("${twilio.phone.to}")
 	private String twilioPhoneTo;
 
-	public String notifyUserOpen(String textMessage) {
+	public String notifyNormalUser(String textMessage, String phoneNumber) {
 
 		Twilio.init(twilioSid, twilioKey);
 
 		PhoneNumber to = new PhoneNumber(twilioPhoneTo);
 		PhoneNumber from = new PhoneNumber(twilioPhoneFrom);
+		
+		if (!phoneNumber.equals("")) {
+			to = new PhoneNumber(phoneNumber);
+		}
 		
 		if(!textMessage.equals("")) {
 			Message message = Message.creator(to, from, textMessage).create();
 
-			log.info("[SmsService] notifyUserOpen: Message sent successfully | SID: " + message.getSid());
+			log.info("[SmsService] notifyNormalUser: Message sent successfully | SID: " + message.getSid());
 			return "Message sent successfully!";
 		} else {
-			log.error("[SmsService] notifyUserOpen: Message not sent");
+			log.error("[SmsService] notifyNormalUser: Message not sent");
 			return "Message not sent!";
 		}
 	}
 	
-	public void notifySaleUser(Long id) {
+	public void notifySaleUser(Long id, String phoneNumber) {
 		
 		Twilio.init(twilioSid, twilioKey);
 		
 		PhoneNumber to = new PhoneNumber(twilioPhoneTo);
 		PhoneNumber from = new PhoneNumber(twilioPhoneFrom);
+		
+		if (!phoneNumber.equals("")) {
+			to = new PhoneNumber(phoneNumber);
+		}
 		
 		Sale sale = saleRepository.findById(id).get();
 		

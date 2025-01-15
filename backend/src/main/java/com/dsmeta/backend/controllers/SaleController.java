@@ -31,14 +31,18 @@ public class SaleController {
 		return saleService.getAllSalesByDate(minDate, maxDate, pageable);
 	}
 	
-	@GetMapping("/notifyUser")
-	public String notifyUserOpen(@RequestParam(value = "textMessage", defaultValue = "") String textMessage) {
-		return smsService.notifyUserOpen(textMessage);
+	@GetMapping("/notifyNormalUser")
+	public String notifyNormalUser(
+			@RequestParam(value = "textMessage", defaultValue = "") String textMessage,
+			@RequestParam(value = "phoneNumber", defaultValue = "") String phoneNumber) {
+		return smsService.notifyNormalUser(textMessage, phoneNumber);
 	}
 	
 	@GetMapping("/notifySaleUser/{id}")
-	public void notifySaleUser(@PathVariable Long id) {
-		smsService.notifySaleUser(id);
+	public void notifySaleUser(
+			@PathVariable Long id,
+			@RequestParam(value = "phoneNumber", defaultValue = "") String phoneNumber) {
+		smsService.notifySaleUser(id, phoneNumber);
 	}
 	
 }
