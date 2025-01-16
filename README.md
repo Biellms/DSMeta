@@ -4,7 +4,7 @@
 
 App de listagem de vendas Multiplataforma com as tecnologias mais demandadas do mercado, como: _**Java, Spring, ReactJS, Docker and Twilio SMS API.**_
 
-<img width="600px" src="./documents/Main.png"/>
+<img width="600px" src="./documents/main.png"/>
 
 </div>
 
@@ -28,7 +28,7 @@ DSMeta é uma aplicação full-stack web e mobile desenvolvida durante a aulas d
 
 ### **Escopo do projeto** ⚙️
 
-<img width="600px" src="./documents/Project Scope.png"/>
+<img width="600px" src="./documents/project-scope.png"/>
 
 </div>
 
