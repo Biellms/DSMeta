@@ -4,7 +4,7 @@
 
 App de listagem de vendas Multiplataforma com as tecnologias mais demandadas do mercado, como: _**Java, Spring, ReactJS, Docker and Twilio SMS API.**_
 
-<img width="600px" src="./documents/main.png"/>
+<img width="600px" src="./documents/landing-page.png"/>
 
 </div>
 
@@ -14,7 +14,7 @@ App de listagem de vendas Multiplataforma com as tecnologias mais demandadas do 
 
 <div align="center">
 
-### **Sobre** 📝
+#### **Sobre** 📝
 
 </div>
 
@@ -26,11 +26,44 @@ DSMeta é uma aplicação full-stack web e mobile desenvolvida durante a aulas d
 
 <div align="center">
 
-### **Escopo do projeto** ⚙️
+#### **Escopo do projeto** ⚙️
 
 <img width="600px" src="./documents/project-scope.png"/>
 
 </div>
+
+<br>
+
+**Try yourself with docker:**
+
+1. Clone o projeto em https no seu ambiente de trabalho
+
+```bash
+git clone https://github.com/Biellms/DSMeta.git
+```
+
+<br>
+
+1. Acesse o repositório e crie um arquivo `.env` para as variaveis de ambiente na pasta `/backend`, com suas informações do Twillio.
+
+```text
+TWILIO_SID=?
+TWILIO_KEY=?
+TWILIO_PHONE_FROM=?
+TWILIO_PHONE_TO=?
+```
+
+<br>
+
+3. Acesse o repositório `/DSMeta` e execute o arquivo `docker-compose.yml`
+
+```bash
+docker-compose up
+```
+
+<br>
+
+4. Acesse o `localhost:????` no seu navegador.
 
 <br>
 
