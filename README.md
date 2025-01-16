@@ -22,8 +22,6 @@ DSMeta é uma aplicação full-stack web e mobile desenvolvida durante a aulas d
 
 - **[Front-end](https://github.com/Biellms/DSMeta/tree/main/frontend)** construido em **ReactJS** com template em **Typescript**. E a estilização com o **framework bootstrap**.
 
-<br>
-
 <div align="center">
 
 ### **Escopo do projeto** ⚙️
@@ -33,8 +31,6 @@ DSMeta é uma aplicação full-stack web e mobile desenvolvida durante a aulas d
 </div>
   
 > ##### Acesse o deploy da aplicação [clicando aqui 🖥️](https://github.com/Biellms)
-
-<br>
 
 #
 
