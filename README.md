@@ -2,7 +2,9 @@
 
 ### **DSMeta** 🖥️
 
-Semana Spring React - App completo com as tecnologias mais demandadas do mercado, como: Java, Spring, ReactJS e SQL.
+App de listagem de vendas Multiplataforma com as tecnologias mais demandadas do mercado, como: _**Java, Spring, ReactJS, Docker and Twilio SMS API.**_
+
+<img width="600px" src="./documents/Main.png"/>
 
 </div>
 
@@ -14,7 +16,23 @@ Semana Spring React - App completo com as tecnologias mais demandadas do mercado
 
 </div>
 
-DSMeta é uma aplicação full-stack web e mobile desenvolvida durante a **Semana Spring React**, evento organizado pela **[DevSuperior](https://devsuperior.com.br)**.
+DSMeta é uma aplicação full-stack web e mobile desenvolvida durante a aulas da **Semana Spring React**, evento organizado pela **[DevSuperior](https://devsuperior.com.br)**.
+
+- **[Back-end](https://github.com/Biellms/DSMeta/tree/main/backend)** construido como projeto **Maven** com **Java 17** e **Spring Boot 3**. Com a utilização e consumo do **Twilio SMS API** para envio de mensagens personalizadas para numero de celulares. 
+
+- **[Front-end](https://github.com/Biellms/DSMeta/tree/main/frontend)** construido em **ReactJS** com template em **Typescript**. E a estilização com o **framework bootstrap**.
+
+<br>
+
+<div align="center">
+
+### **Escopo do projeto** ⚙️
+
+<img width="600px" src="./documents/Project Scope.png"/>
+
+</div>
+  
+> ##### Acesse o deploy da aplicação [clicando aqui 🖥️](https://github.com/Biellms)
 
 <br>
 

@@ -39,17 +39,17 @@ public class SmsService {
 		PhoneNumber from = new PhoneNumber(twilioPhoneFrom);
 		
 		if (!phoneNumber.equals("")) {
-			to = new PhoneNumber(phoneNumber);
+			to = new PhoneNumber("+"+phoneNumber);
 		}
 		
 		if(!textMessage.equals("")) {
 			Message message = Message.creator(to, from, textMessage).create();
 
-			log.info("[SmsService] notifyNormalUser: Message sent successfully | SID: " + message.getSid());
+			log.info("[SmsService] notifyNormalUser: Message sent successfully to " + to + " | SID: " + message.getSid());
 			return "Message sent successfully!";
 		} else {
-			log.error("[SmsService] notifyNormalUser: Message not sent");
-			return "Message not sent!";
+			log.error("[SmsService] notifyNormalUser: Message not sent to " + to + ". textMessage missing!");
+			return "Message not sent, textMessage missing!";
 		}
 	}
 	
@@ -61,7 +61,7 @@ public class SmsService {
 		PhoneNumber from = new PhoneNumber(twilioPhoneFrom);
 		
 		if (!phoneNumber.equals("")) {
-			to = new PhoneNumber(phoneNumber);
+			to = new PhoneNumber("+"+phoneNumber);
 		}
 		
 		Sale sale = saleRepository.findById(id).get();
@@ -78,7 +78,7 @@ public class SmsService {
 		
 		Message message = Message.creator(to, from, msg).create();
 			
-		log.info("[SmsService] notifySaleUser: Message sent successfully | SID: " + message.getSid());
+		log.info("[SmsService] notifySaleUser: Message sent successfully " + to + " | SID: " + message.getSid());
 	}
 	
 }

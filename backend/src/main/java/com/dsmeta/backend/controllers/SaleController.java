@@ -38,7 +38,7 @@ public class SaleController {
 		return smsService.notifyNormalUser(textMessage, phoneNumber);
 	}
 	
-	@GetMapping("/notifySaleUser/{id}")
+	@GetMapping("/{id}/notifySaleUser")
 	public void notifySaleUser(
 			@PathVariable Long id,
 			@RequestParam(value = "phoneNumber", defaultValue = "") String phoneNumber) {
