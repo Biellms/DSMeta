@@ -8,6 +8,8 @@ App de listagem de vendas Multiplataforma com as tecnologias mais demandadas do 
 
 </div>
 
+> ##### Acesse o deploy da aplicação [clicando aqui 🖥️](https://github.com/Biellms)
+
 #
 
 <div align="center">
@@ -29,8 +31,8 @@ DSMeta é uma aplicação full-stack web e mobile desenvolvida durante a aulas d
 <img width="600px" src="./documents/Project Scope.png"/>
 
 </div>
-  
-> ##### Acesse o deploy da aplicação [clicando aqui 🖥️](https://github.com/Biellms)
+
+<br>
 
 #
 
