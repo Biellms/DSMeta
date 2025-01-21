@@ -4,7 +4,7 @@
 
 App de listagem de vendas Multiplataforma com as tecnologias mais demandadas do mercado, como: _**Java, Spring, ReactJS, Docker and Twilio SMS API.**_
 
-<img width="600px" src="./documents/landing-page.png"/>
+<img width="600px" src="./utils/landing-page.png"/>
 
 </div>
 
@@ -28,15 +28,15 @@ DSMeta é uma aplicação full-stack web e mobile desenvolvida durante a aulas d
 
 #### **Escopo do projeto** ⚙️
 
-<img width="600px" src="./documents/project-scope.png"/>
+<img width="600px" src="./utils/project-scope.png"/>
 
 </div>
 
 <br>
 
-**Try yourself with docker:**
+**Try yourself with [docker](https://www.docker.com/products/docker-desktop/):**
 
-1. Clone o projeto em https no seu ambiente de trabalho
+1. Clone o projeto em https no seu ambiente de trabalho:
 
 ```bash
 git clone https://github.com/Biellms/DSMeta.git
@@ -44,7 +44,7 @@ git clone https://github.com/Biellms/DSMeta.git
 
 <br>
 
-1. Acesse o repositório e crie um arquivo `.env` para as variaveis de ambiente na pasta `/backend`, com suas informações do Twillio.
+2. Acesse o repositório e crie um arquivo `.env` para as variaveis de ambiente na pasta `/backend`, com as suas seguintes informações do Twillio:
 
 ```text
 TWILIO_SID=?
@@ -55,7 +55,7 @@ TWILIO_PHONE_TO=?
 
 <br>
 
-3. Acesse o repositório `/DSMeta` e execute o arquivo `docker-compose.yml`
+3. Acesse o repositório `/DSMeta` e execute o arquivo `docker-compose.yml`:
 
 ```bash
 docker-compose up
@@ -63,7 +63,7 @@ docker-compose up
 
 <br>
 
-4. Acesse o `localhost:????` no seu navegador.
+4. Acesse o `http://localhost:????` no seu navegador.
 
 <br>
 
