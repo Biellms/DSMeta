@@ -11,7 +11,7 @@ type Props = {
 
 function handleClickSendNotification(id: number) {
   const notifyPromise = toast.promise(
-    axios(`${BASE_URL}/sales/notifySaleUser/${id}`),
+    axios(`${BASE_URL}/sales/${id}/notifySaleUser`),
     {
       pending: 'Sending notification...',
       success: 'Notification sent successfully! ',

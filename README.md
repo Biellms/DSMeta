@@ -63,7 +63,7 @@ docker-compose up
 
 <br>
 
-4. Acesse o `http://localhost:????` no seu navegador.
+4. Acesse o `http://localhost:5173` no seu navegador.
 
 <br>
 
