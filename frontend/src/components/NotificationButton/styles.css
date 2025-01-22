@@ -19,3 +19,104 @@
 .dsmeta-blue-btn img {
     width: 22px;
 }
+
+/* Estilos para o modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-container {
+    background-color: #283142;
+    border-radius: 10px;
+    padding: 30px 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-out;
+    width: 400px;
+}
+
+.modal-container-title {
+    color: white;
+    font-weight: bold;
+}
+
+.modal-input-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.modal-input {
+    text-align: center;
+    width: 165px;
+    height: 46px;
+    background-color: #1b2531;
+    border: 1px solid #384459;
+    border-radius: 5px;
+    color: #9aaabe;
+    font-size: 18px;
+}
+
+.modal-input.fixed {
+    width: 55px;
+    cursor: not-allowed;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 15px;
+}
+
+.modal-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.modal-button.confirm {
+    background: #0686D8;
+    border: 1px solid #0686D8;
+    color: white;
+    transition: filter 0.2s ease-in-out;
+}
+
+.modal-button.confirm:hover {
+    transition: filter 0.2s ease-in-out;
+    filter: brightness(1.2);
+}
+
+.modal-button.cancel {
+    background: #2e3c55;
+    border: 1px solid #0686D8;
+    color: #0686D8;
+    transition: filter 0.2s ease-in-out;
+}
+
+.modal-button.cancel:hover {
+    transition: filter 0.2s ease-in-out;
+    filter: brightness(1.25);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
