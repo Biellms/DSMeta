@@ -95,7 +95,7 @@ function SalesCard() {
                                 <>
                                     <tr>
                                         <td className="show992">#341</td>
-                                        <td className="show576">23/07/2024</td>
+                                        <td className="show576">29/01/2024</td>
                                         <td>Bruce Wayne</td>
                                         <td className="show992">54</td>
                                         <td className="show992">26</td>
@@ -112,10 +112,23 @@ function SalesCard() {
                                         <td>Clark Kent</td>
                                         <td className="show992">34</td>
                                         <td className="show992">17</td>
-                                        <td>R$ 66400.00</td>
+                                        <td>$ 66400.00</td>
                                         <td>
                                             <div className="dsmeta-red-btn-container">
                                                 <NotificationButton saleId={2}/>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className="show992">#78</td>
+                                        <td className="show576">10/07/2024</td>
+                                        <td>Barry Allen</td>
+                                        <td className="show992">50</td>
+                                        <td className="show992">23</td>
+                                        <td>$ 75400.00</td>
+                                        <td>
+                                            <div className="dsmeta-red-btn-container">
+                                                <NotificationButton saleId={3}/>
                                             </div>
                                         </td>
                                     </tr>
