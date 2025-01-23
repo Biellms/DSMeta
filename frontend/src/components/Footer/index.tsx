@@ -5,7 +5,7 @@ function Footer() {
         <footer>
             <div className="dsmeta-logo-container">
                 <p className="footer-text">
-                    <a href="https://www.linkedin.com/in/biellms/" target="_blank">Desenvolvido por  © Gabriel Mendes</a>
+                    <a href="https://www.linkedin.com/in/biellms/" target="_blank">Developed by © Gabriel Mendes</a>
                 </p>
                 <div className='dsmeta-footer-link'>
                     <a href="https://www.linkedin.com/in/gabriel-mendes-0706ab1b8" target="_blank">

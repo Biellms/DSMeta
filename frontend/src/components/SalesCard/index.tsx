@@ -34,7 +34,7 @@ function SalesCard() {
 
     return (
         <div className="dsmeta-card">
-            <h2 className="dsmeta-sales-title">Tabela de Vendas</h2>
+            <h2 className="dsmeta-sales-title">Sales List</h2>
             <hr />
             <br />
             <div className='dsmeta-box-date'>
@@ -65,12 +65,12 @@ function SalesCard() {
                     <thead>
                         <tr>
                             <th className="show992">ID</th>
-                            <th className="show576">Data</th>
-                            <th>Vendedor</th>
-                            <th className="show992">Visitas</th>
-                            <th className="show992">Vendas</th>
-                            <th>Total</th>
-                            <th>Notificar</th>
+                            <th className="show576">Date</th>
+                            <th>Seller</th>
+                            <th className="show992">Visited</th>
+                            <th className="show992">Deals</th>
+                            <th>Amount</th>
+                            <th>Notify</th>
                         </tr>
                     </thead>
                     <tbody>

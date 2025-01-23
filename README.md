@@ -14,7 +14,7 @@ App de listagem de vendas Multiplataforma com as tecnologias mais demandadas do 
 
 </div>
 
-> ##### Acesse o deploy da aplicação [clicando aqui 🖥️](https://biellms-listsales.netlify.app)
+> ##### Acesse o deploy da aplicação [clicando aqui 🖥️](https://biellsaleslist.netlify.app)
 
 #
 
