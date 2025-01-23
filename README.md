@@ -4,6 +4,8 @@
 
 App de listagem de vendas Multiplataforma com as tecnologias mais demandadas do mercado, como: _**Java, Spring, ReactJS, Docker and Twilio SMS API.**_
 
+#
+
 <img width="600px" src="./utils/landing-page.png"/>
 
 <br>
@@ -12,7 +14,7 @@ App de listagem de vendas Multiplataforma com as tecnologias mais demandadas do 
 
 </div>
 
-> ##### Acesse o deploy da aplicação [clicando aqui 🖥️](https://github.com/Biellms)
+> ##### Acesse o deploy da aplicação [clicando aqui 🖥️](https://biellms-listsales.netlify.app)
 
 #
 
